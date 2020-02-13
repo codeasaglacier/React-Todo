@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import TodoForm from './components/TodoComponents/TodoForm'
 import TodoList from './components/TodoComponents/TodoList'
 import './components/TodoComponents/Todo.css'
@@ -36,7 +35,7 @@ class App extends Component {
     }
   }
 
-  addTodo = ( e, todo ) => {
+  addTodo = ( e, item ) => {
     e.preventDefault()
 
     const newTodo = {
