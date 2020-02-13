@@ -15,7 +15,7 @@ class TodoForm extends Component {
 
     submitItem = e => {
         e.preventDefault()
-        this.props.addItem( e, this.state.item )
+        this.props.addTodo( e, this.state.item )
     }
     render() {
         console.log( 'Rendering form', this.state.item )

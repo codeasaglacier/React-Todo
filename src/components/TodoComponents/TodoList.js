@@ -9,11 +9,12 @@ const TodoList = props => {
         <Todo 
           key = { item.id } 
           item = { item } 
-          toggleItem = { props.toggleItem } 
+          toggleTodo = { props.toggleTodo } 
         />
       ))}
       <button onClick = { props.clearCompleted }>Clear Completed</button>
     </div>
   )
-
 }
+
+export default TodoList
