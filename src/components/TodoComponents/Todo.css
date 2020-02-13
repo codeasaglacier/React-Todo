@@ -1,0 +1,42 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+.everything {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+.header {
+  color: greenyellow;
+}
+
+.form {
+  background-color: greenyellow;
+}
+
+.todo-list {
+  cursor: pointer;
+}
+.input {
+  background-color: greenyellow;
+}
+
+.button {
+  background-color: greenyellow;
+  margin-top: 1rem;
+}
+
+.item.completed {
+  color: greenyellow;
+  text-decoration: line-through;
+}
