@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Item = props => {
+const Todo = props => {
     console.log( 'Props: ', props)
 
     return (
@@ -13,4 +13,4 @@ const Item = props => {
     )
 }
 
-export default Item
+export default Todo
