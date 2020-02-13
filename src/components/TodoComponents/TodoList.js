@@ -1,5 +1,6 @@
 import React from 'react'
 import Todo from './Todo'
+import TodoForm from './TodoForm'
 
 const TodoList = props => {
 
@@ -12,7 +13,9 @@ const TodoList = props => {
           toggleTodo = { props.toggleTodo } 
         />
       ))}
-      <button onClick = { props.clearCompleted }>Clear Completed</button>
+      <button 
+        className = 'todo-list button' 
+        onClick = { props.clearCompleted }>Clear Completed</button>
     </div>
   )
 }

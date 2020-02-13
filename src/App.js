@@ -20,7 +20,7 @@ const todos = [
     completed: false
   },
   {
-    task: 'Finish Todos',
+    task: 'Finish to do list',
     id: 3,
     completed: false
   }
@@ -78,16 +78,16 @@ class App extends Component {
   render() {
     console.log( 'rendering...' )
     return (
-      <div>
+      <div className = 'everything'>
         <div className = 'header'>
           <h1>To Do Today</h1>
           <TodoForm addTodo = { this.addTodo } />
-        </div>
         <TodoList
           todos = { this.state.todos }
           toggleTodo = { this.toggleTodo }
           clearCompleted = { this.clearCompleted }
-        />
+          />
+          </div>
       </div>
     );
   }

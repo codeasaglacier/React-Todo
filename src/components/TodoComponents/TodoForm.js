@@ -20,9 +20,16 @@ class TodoForm extends Component {
     render() {
         console.log( 'Rendering form', this.state.item )
         return (
-            <form onSubmit = { this.submitItem }>
-                <input type = 'text' name = 'item' onChange = { this.handleChanges } />
-                <button>Add</button>
+            <form 
+                onSubmit = { this.submitItem }
+            >
+                <input 
+                    className = 'input'
+                    type = 'text' 
+                    name = 'item' 
+                    onChange = { this.handleChanges } 
+                />
+                <button className = 'button'>Add</button>
             </form>
         )
     }
